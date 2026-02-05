@@ -4,7 +4,14 @@ main {
 }
 
 header {
-  height: 15%;
-  width: 100%;
+  height: 200px;
+  width: 100vw;
   background-color: #0e3386;
+  color: white;
+}
+
+button.nav {
+  height: 40px;
+  width: 25vw;
+  color: fff8a5;
 }
