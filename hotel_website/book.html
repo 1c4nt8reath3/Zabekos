@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel Booking - Book a Room</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="container">
+          <h1>Grand Hotel</h1>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="book.html">Book Room</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="form-container">
+          <h2>Book Your Room</h2>
+          <form id="bookingForm" action="php/book.php" method="POST">
+            <div class="form-group">
+              <label for="room_type">Room Type:</label>
+              <select id="room_type" name="room_type" required>
+                <option value="">Select Room Type</option>
+                <option value="Single">Single Room - $100/night</option>
+                <option value="Double">Double Room - $150/night</option>
+                <option value="Suite">Suite - $250/night</option>
+                <option value="Family">Family Room - $200/night</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="check_in">Check-in Date:</label>
+              <input type="date" id="check_in" name="check_in" required />
+            </div>
+            <div class="form-group">
+              <label for="check_out">Check-out Date:</label>
+              <input type="date" id="check_out" name="check_out" required />
+            </div>
+            <button type="submit" class="btn">Book Now</button>
+          </form>
+          <p>
+            You must be logged in to book a room.
+            <a href="login.html">Login here</a>
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2023 Grand Hotel. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
